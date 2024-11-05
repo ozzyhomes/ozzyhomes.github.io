@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ozzy Homes</title>
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			height: 100vh;
+			font-family: Arial, sans-serif;
+			background: url('images/background.jpg') no-repeat center center;
+			background-size: cover;
+			overflow: hidden;
+			color: #f4f4f4;
+		}
+
+		.container {
+			width: 100%;
+			height: 100%;
+		}
+
+		.cover {
+		    width: 44%;
+		    height: 100%;
+		    background-color: #002536;
+			transform: skewX(-8deg);
+			transform-origin: top right;
+		}
+
+		.info {
+			position: absolute;
+			top: 30%;
+			left: 5%;
+			width: 30%;
+		}
+
+		.title {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+
+		.phone {
+			display: block;
+			margin-bottom: 90px;
+			padding: 10px 30px;
+			width: fit-content;
+			font-size: 20px;
+			font-weight: bold;
+			color: #222;
+			background-color: #f4f4f4;
+			text-decoration: none;
+		}
+
+		.phone:hover {
+			color: #f4f4f4;
+			background-color: #004052;
+		}
+
+		.address {
+			font-size: 20px;
+		}
+
+
+		@media (max-width: 768px) {
+
+			.cover {
+				width: 100%;
+				height: 45%;
+				transform: none;
+			}
+
+			.info {
+				top: 10%;
+				width: 90%;
+			}
+
+			.phone {
+				margin-bottom: 40px;
+			}
+
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="cover"></div>
+		<div class="info">
+			<h1 class="title">Ozzy Homes</h1>
+			<a class="phone" href="tel:00905074793334">+90 507 479 33 34</a>
+			<p class="address">Haşimişcan, 1297. Sk. NO:24, 07070 Muratpaşa/Antalya</p>
+		</div>
+	</div>
+
+</body>
+</html>
